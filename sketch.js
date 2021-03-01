@@ -19,9 +19,9 @@ function preload()
 function setup() {
 	createCanvas(800, 750);
 
-//	fairyVoice.play();
+	fairyVoice.play();
 
-	fairy = createSprite(130, 520);
+	fairy = createSprite(120, 520);
 	fairy.addAnimation("fairyflying",fairyImg);  
 	fairy.scale =0.25;
 
@@ -48,11 +48,11 @@ function draw() {
 }
 
 function keyPressed() {
-starBody.y=starBody.y+50;
-
-if (starBody.y>470){
-	fairy.x=500;
+fairy.x=fairy.x+50;
+if (fairy.x=520){
+	star.y=470;
 }
+
 	
 
 }
